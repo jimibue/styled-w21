@@ -7,6 +7,7 @@ import anything, {
   yo,
 } from "./components/ExportImportDemo";
 import { bigNumAdd } from "./helper/Math";
+import Projects from "./components/Projects";
 
 function App() {
   yo();
@@ -20,6 +21,7 @@ function App() {
       <HeaderText fSize="large">My Portfolio</HeaderText>
       <Segment as={Transparent} onClick={doMath}>
         <HeaderText fSize="meduim">My Projects</HeaderText>
+        <Projects />
       </Segment>
       <Segment as={Transparent}>
         <HeaderText fSize="small">Contact</HeaderText>
