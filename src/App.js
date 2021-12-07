@@ -8,6 +8,7 @@ import anything, {
 } from "./components/ExportImportDemo";
 import { bigNumAdd } from "./helper/Math";
 import Projects from "./components/Projects";
+import Demo from "./components/Demo";
 
 function App() {
   yo();
@@ -19,6 +20,7 @@ function App() {
   return (
     <AppContainer>
       <HeaderText fSize="large">My Portfolio</HeaderText>
+      <Demo />
       <Segment as={Transparent} onClick={doMath}>
         <HeaderText fSize="meduim">My Projects</HeaderText>
         <Projects />
